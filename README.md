@@ -18,9 +18,25 @@ The vault is split into three zones with different editing rules, enforced via `
 
 Claude never edits or moves anything in `raw/` — it only reads, cites, and links to it. `wiki/` is Claude's own territory: every page there gets frontmatter (`title`, `type`, `tags`, `sources`) and at least one `[[wikilink]]` to another page, so the wiki stays a connected graph instead of a pile of orphaned notes. `dev/` is a shared workspace — Claude can suggest edits but won't touch an existing ADR without explicit confirmation.
 
+## Use this template
+
+This repo is a GitHub template repository, so you get your own copy with clean history — not a fork.
+
+**Via GitHub UI:**
+
+1. Click **Use this template → Create a new repository** at the top of [github.com/drmikeh/megamind](https://github.com/drmikeh/megamind).
+2. Pick an owner, name, and visibility for your new repo.
+3. Clone your new repo locally.
+
+**Via GitHub CLI:**
+
+```sh
+gh repo create my-vault --template drmikeh/megamind --clone
+```
+
 ## Getting started
 
-1. Clone this repo and open it as a vault in Obsidian.
+1. Create your own repo from this template (see above) and open it as a vault in Obsidian.
 2. Open the same folder with Claude Code.
 3. Drop material into `raw/` (or let `/wiki-ingest` fetch and save it for you), then run the commands below to grow the wiki.
 4. Read and adjust `CLAUDE.md` — it's the contract Claude follows for this vault. Zone rules, frontmatter conventions, and the ingestion workflow all live there.
