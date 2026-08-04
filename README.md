@@ -4,15 +4,17 @@ A starter repository for running an **AI-managed wiki** on top of an [Obsidian](
 
 You keep capturing raw material — clippings, papers, daily notes. Claude turns it into a linked, structured wiki of concepts and entities, and keeps that wiki in sync as new material comes in.
 
+![Megamind](megamind.png)
+
 ## Concept
 
 The vault is split into three zones with different editing rules, enforced via `CLAUDE.md`:
 
-| Zone | Who owns it | What lives there |
-|---|---|---|
-| `raw/` | You (read-only for Claude) | Clipped articles, papers, books, daily notes, fleeting thoughts |
-| `wiki/` | Claude (LLM-maintained) | Concepts, entities, syntheses, indices — generated and refactored freely |
-| `dev/` | Both (collaborative) | ADRs, debriefs, projects, snippets |
+| Zone    | Who owns it                | What lives there                                                         |
+| ------- | -------------------------- | ------------------------------------------------------------------------ |
+| `raw/`  | You (read-only for Claude) | Clipped articles, papers, books, daily notes, fleeting thoughts          |
+| `wiki/` | Claude (LLM-maintained)    | Concepts, entities, syntheses, indices — generated and refactored freely |
+| `dev/`  | Both (collaborative)       | ADRs, debriefs, projects, snippets                                       |
 
 Claude never edits or moves anything in `raw/` — it only reads, cites, and links to it. `wiki/` is Claude's own territory: every page there gets frontmatter (`title`, `type`, `tags`, `sources`) and at least one `[[wikilink]]` to another page, so the wiki stays a connected graph instead of a pile of orphaned notes. `dev/` is a shared workspace — Claude can suggest edits but won't touch an existing ADR without explicit confirmation.
 
