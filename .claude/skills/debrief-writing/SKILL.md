@@ -78,11 +78,13 @@ Numbered list with [[wikilinks]] to projects where action will be executed.
 1-2 paragraphs. **This is the most important section.** What goes beyond this
 incident? What pattern applies to other systems? One-sentence answer:
 "Systems that X must Y" — something that could become a future skill rule.
-```
 
 ## Rules
 
 - Debriefs are blameless: focus on system/process, not individuals.
 - Always link to related ADRs and projects for context.
+- Ensure the generalizable learning section is filled out; this is the primary value of the debrief.
 - Keep the timeline accurate and in chronological order with explicit timezones.
 - Action items should be actionable and linked to relevant projects.
+- Debriefs should be created promptly after the incident to ensure accuracy of information.
+- Use consistent formatting for dates, times, and links to maintain readability and traceability.

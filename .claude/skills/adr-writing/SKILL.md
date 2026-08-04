@@ -42,6 +42,7 @@ superseded-by: []
 ## Context
 
 2-4 paragraphs describing the problem and what motivated this decision. Include:
+
 - Observed symptom / business requirement
 - Known constraints
 - Wikilinks to related projects [[Project-X]]
@@ -53,12 +54,15 @@ superseded-by: []
 ## Consequences
 
 ### Positive
+
 - Short bullet item
 
 ### Negative / trade-offs
+
 - Short bullet item
 
 ### Neutral
+
 - Short bullet item
 
 ## Alternatives considered
@@ -72,9 +76,12 @@ Brief list. For each: why rejected (1-2 sentences).
 - External URLs when relevant
 ```
 
+
 ## Rules
 
 - Accepted ADR is IMMUTABLE except for status change (accepted → superseded).
 - Never delete an old ADR. If superseded, mark status: superseded and
   link superseded-by to the new one.
 - If you find contradiction between two ADRs, DO NOT resolve alone. Report to Roan.
+- When creating a new ADR, ensure the numbering is correct and that it does not duplicate an existing decision.
+- When updating an existing ADR, ensure the status and superseded-by fields are updated correctly to maintain the ADR chain.
