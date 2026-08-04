@@ -4,7 +4,7 @@ A starter repository for running an **AI-managed wiki** on top of an [Obsidian](
 
 You keep capturing raw material — clippings, papers, daily notes. Claude turns it into a linked, structured wiki of concepts and entities, and keeps that wiki in sync as new material comes in.
 
-![Megamind](megamind.png)
+![Obsidian+Claude=Megamind](docs/obsidian_claude_megamind.png)
 
 ## Concept
 
